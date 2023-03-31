@@ -1,12 +1,14 @@
-# Covid 19 project
+# Covid 19 Analysis
  
 ### Purpose
-The goal of this project was to perform an analysis on Covid-19's worldwide metrics using SQL and Tableau. Using the Covid-19 dataset, I extracted two tables of data pertaining to information on deaths and vaccinations with a multitude of variables.
+The goal of this project was to perform an analysis on [Covid-19's worldwide metrics](https://ourworldindata.org/covid-deaths) using SQL and Tableau. Using the Covid-19 dataset, I extracted two tables of data pertaining to information on deaths and vaccinations with a multitude of variables.
 In order to explore the data, I wrote a variety of SQL queries, including but not limited to aggregate functions and JOINs.
 
-View the complete exploration SQL syntax [here](https://github.com/ahmeevang/Covid-19-project/blob/main/Covid19.sql).
+Once finished with the exploration, I moved to Tableau to create a [dashboard](https://public.tableau.com/app/profile/ahmee5206/viz/CovidDashboard_16787380947350/Dashboard1) to visualize my findings.
 
-The four main queries used to create the [Tableau dashboard](https://public.tableau.com/app/profile/ahmee5206/viz/CovidDashboard_16787380947350/Dashboard1):
+View the complete SQL exploration syntax [here](https://github.com/ahmeevang/Covid-19-project/blob/main/Covid19.sql).
+
+#### Main queries used to create the dashboard:
  
  ```sql
  SELECT SUM(new_cases) AS TotalCases, SUM(new_deaths) AS TotalDeaths, SUM(CAST(new_deaths as REAL))/SUM(new_cases)*100 AS DeathPercentage
