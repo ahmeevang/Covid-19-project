@@ -8,7 +8,7 @@ Once finished with the exploration, I moved to Tableau to create a [dashboard](h
 
 View the complete SQL exploration syntax [here](https://github.com/ahmeevang/Covid-19-project/blob/main/Covid19.sql).
 
-#### Main queries used to create the dashboard:
+#### Queries used to create the dashboard:
  
  ```sql
  SELECT SUM(new_cases) AS TotalCases, SUM(new_deaths) AS TotalDeaths, SUM(CAST(new_deaths as REAL))/SUM(new_cases)*100 AS DeathPercentage
